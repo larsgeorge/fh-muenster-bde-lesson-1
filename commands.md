@@ -1,11 +1,19 @@
 ## Kommandos
-Die folgenden Kommandos werden in der Cloudera QuickStart VM in einem Terminal Fenster ausgeführt. Dazu muss in der Menüzeile am oberen Bildschirmrand auf der linken Seite auf das Terminal Icon geklickt werden. Die folgenden Kommandos werden im Kontext erklärt.
 
-Die VM läuft in der Vorgabe _ohne_ Cloudera Manager, sondern startet alle Dienste über die Linux _Services_ Infrastruktur. Um zu sehen welche Prozesse gestartet sind, kann man beispielsweise den folgen Befehl verwenden:
+Die folgenden Kommandos werden entweder 
 
-```
-$ sudo service --status-all
-```
+- in der _Cloudera QuickStart VM_ in einem Terminal Fenster ausgeführt, wobei in der Menüzeile am oberen Bildschirmrand auf der linken Seite auf das _Terminal_ Icon geklickt werden muss, oder
+- für die _Hortonworks Sandbox VM_in einer SSH Sitzung (z. B. `$ ssh -p 2222 root@localhost`, Passwort `hadoop`, oder PuTTY). 
+
+Einige Hinweise zur den VMs:
+
+- Die Cloudera VM läuft in der Vorgabe _ohne_ Cloudera Manager, sondern startet alle Dienste über die Linux _Services_ Infrastruktur. Um zu sehen welche Prozesse gestartet sind, kann man beispielsweise den folgen Befehl verwenden:
+
+  ```
+  $ sudo service --status-all
+  ```
+
+- Die folgenden Kommandos werden im Kontext der Cloudera VM erklärt, können aber genau so in der Hortonworks Version ausgeführt werden. Ein Unterschied ist, das die Cloudera VM einen User Account nutzt (`cloudera`), während die Hortonworks VM mit dem Linux `root` User arbeitet. Das macht unten einen Unterschied was die Datei Zuordnung und die Pfade angeht (z. B. `/home/cloudera` anstatt `/root` auf Linux, und `/user/cloudera` anstatt `/user/root` auf HDFS Ebene).
 
 Hadoop kommt mir mehrere Kommandozeilen Skripten, benannt `hadoop`, `hdfs`, `yarn` und so weiter. Führt man diese _ohne_ zusätzliche Parameter aus, so werden alle verfugbaren Optionen ausgegeben:
 
