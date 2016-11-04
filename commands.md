@@ -3,7 +3,7 @@
 Die folgenden Kommandos werden entweder 
 
 - in der _Cloudera QuickStart VM_ in einem Terminal Fenster ausgeführt, wobei in der Menüzeile am oberen Bildschirmrand auf der linken Seite auf das _Terminal_ Icon geklickt werden muss, oder
-- für die _Hortonworks Sandbox VM_in einer SSH Sitzung (z. B. `$ ssh -p 2222 root@localhost`, Passwort `hadoop`, oder PuTTY). 
+- für die _Hortonworks Sandbox VM_ in einer SSH Sitzung, z. B. für MacOS im Terminal mit `$ ssh -p 2222 root@localhost`, Passwort `hadoop`, oder für Windows mit PuTTY mit den entsprechenden Werten gesetzt. 
 
 Einige Hinweise zur den VMs:
 
